@@ -16,12 +16,12 @@
 function init(){
     console.log("DOM Cargado");
     $("p").html("Este es un parrafo modificado");
-    $("body").append("<p>Este es otro parrafo con append</p>");
+    $("body").append("<p>Este es otro parrafo con append</p>");//3
     $("#parrafo1").after("<p>un parrafo con after entre dos parrafos</p>")//4
     $("body :last-child").css("background-color","red");//5
     $("body :last-child").attr("id", "ultimo_id");//6
     $("body :last-child").removeAttr("id");//7
-    $("body :last-child").attr("class","roja");//8
+    $("body :last-child").addClass("roja");//8
     console.log($("body :last-child").attr("class"));//9
     $("form").append("<input type='text'/>");
     $("form input").attr("id","id_campo");//11
