@@ -9,9 +9,37 @@
     <script src="js/jquery.validate.js"></script>
     <script src="js/additional-methods.js"></script>
     <script src="js/localization/messages_es.js"></script>
-    <script src="js/mi_jquery.js"></script>
+    <script src="js/validacion_jquery.js"></script>
 </head>
 <body>
+<form id="miformulario" action="form.php" method="post">
+    <label for="usuario">Usuario</label>
+        <input id="usuario" name="usuario" type="text"/>
+        <label for="password">Clave</label>
+        <input id="password" name="password" type="password"/>
+        <input id="boton_enviar" name="boton_enviar" type="submit" value="Enviar">
+    </form>
 
+    <form id="otroformulario" action="#" method="post">
+        <label for="nombre">nombre</label>
+        <input id="nombre" name="nombre" type="text">
+
+        <label for="email">email</label>
+        <input id="email" name="email" type="text">
+
+        <label for="rep_mail">rep_mail</label>
+        <input id="rep_mail" name="rep_mail" type="password">
+
+        <label for="clave">clave</label>
+        <input id="clave" name="clave" type="password">
+
+        <label for="rep_clave">rep_clave</label>
+        <input id="rep_clave" name="rep_clave" type="text">
+
+        <label for="terminos">Terminos y condiciones</label>
+        <input id="terminos" type="checkbox"/>
+
+        <button type="submit">Enviar</button>
+    </form>
 </body>
 </html>
