@@ -50,7 +50,7 @@ function init() {
 
     }
     
-    form.click(prevent);
+    enviar.click(prevent);
 }
 
 $(document).ready(init);

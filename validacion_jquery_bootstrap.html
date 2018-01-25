@@ -32,17 +32,24 @@
             <div class="col-xl-4">
                 <form id="formulario1" class="need-validation" novalidate>
                     <div class="form-group">
-                      <label for="exampleInputEmail1">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
-                      <small id="emailHelp" class="form-text text-muted">No compartiremos tu correo.</small>
-                      <div class="valid-feedback">¡Tu correo electrónico es válido!</div>
-                      <div class="invalid-feedback">Por favor, ingresa un correo válido</div>
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                        <small id="emailHelp" class="form-text text-muted">No compartiremos tu correo.</small>
+                        <div class="valid-feedback">¡Tu correo electrónico es válido!</div>
+                        <div class="invalid-feedback">Por favor, ingresa un correo válido</div>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Password</label>
                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" minlength=8 required>
                         <div class="valid-feedback">¡Tu clave es válida!</div>
                         <div class="invalid-feedback">Tu clave debe tener por lo menos 8 caracteres</div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">Agree to terms and conditions</label>
+                            <div class="invalid-feedback">You must agree before submitting.</div>
+                        </div>
                     </div>
                     <button id="enviar" type="submit" class="btn btn-primary">Submit</button>
                 </form>
